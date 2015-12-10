@@ -11,3 +11,5 @@ _MY_ROOT_=`dirname $ME`/..
 
 PATH=$PATH:${_MY_ROOT_}/git/
 
+source ${_MY_ROOT_}/git/git-prompt.sh
+
