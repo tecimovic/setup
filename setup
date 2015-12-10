@@ -6,14 +6,18 @@ BASHRC=~/.bashrc
 
 CNT=`grep -c "$KEY" $BASHRC`
 
-if [ $CNT != 0 ]; then
-	echo "Seems like you already ran this on this pc because I can find $KEY in .bashrc"
-	echo "If that's a mistake, then delete $KEY from .bashrc."
-	exit 0
-fi
 
 
 MYDIR=`pwd`
 
-echo "$KEY" >> $BASHRC
-echo "source $MYDIR/bash/bashrc" >> $BASHRC
+echo "Setting up bash..."
+if [ $CNT == 0 ]; then
+	echo "$KEY" >> $BASHRC
+	echo "source $MYDIR/bash/bashrc" >> $BASHRC
+else
+	echo "Seems like you already ran this on this pc because I can find $KEY in .bashrc"
+	echo "If that's a mistake, then delete $KEY from .bashrc and rerun this script."
+fi
+
+echo "Setting up git..."
+$MYDIR/git/git-setup

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# User
+git config --global user.name "Timotej Ecimovic"
+git config --global user.email timotej@digitalgeyser.com
+
+# Some oddball properties
+git config --global core.autocrlf input
+git config --global color.ui true
+git config --global push.default simple
+
+# Aliases
+
+git config --global alias.s "status -s"
+git config --global alias.lg "log --oneline --decorate --graph --all -1000"
+git config --global alias.l "log --decorate --pretty='format:%C(yellow black dim)%h%Creset%C(auto)% d%Creset %C(green black ul)%cN, %ar:%Creset %s' --graph --all -1000"
+git config --global alias.t-rm "branch -d timotej"
+git config --global alias.t-go "checkout -b timotej"
+git config --global alias.wb "rev-parse --abbrev-ref HEAD"
+git config --global alias.sm "submodule update --init --recursive"
+
