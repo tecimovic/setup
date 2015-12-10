@@ -1,6 +1,13 @@
+
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias more='less'
 
 export TIMOTEJ_SETUP=1
+
+_MY_DIR_=`echo "${BASH_SOURCE[@]}" | awk '{print $1}'`
+_MY_ROOT_=`dirname $ME`/..
+
+PATH=$PATH:${_MY_ROOT_}/git/
+
