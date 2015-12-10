@@ -1,0 +1,5 @@
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+export TIMOTEJ_SETUP=1
