@@ -6,8 +6,8 @@ alias more='less'
 
 export TIMOTEJ_SETUP=1
 
-_MY_DIR_=`echo "${BASH_SOURCE[@]}" | awk '{print $1}'`
-_MY_ROOT_=`dirname $ME`/..
+_MY_NAME_=`echo "${BASH_SOURCE[@]}" | awk '{print $1}'`
+_MY_ROOT_=`dirname $_MY_NAME_`/..
 
 PATH=$PATH:${_MY_ROOT_}/git/
 
