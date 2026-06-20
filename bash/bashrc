@@ -1,3 +1,4 @@
+source /usr/share/git-core/contrib/completion/git-prompt.sh
 
 alias rm='rm -i'
 alias cp='cp -i'
