@@ -13,7 +13,7 @@ git config --global push.default simple
 
 git config --global alias.s "status -s"
 git config --global alias.lg "log --oneline --decorate --graph --all -1000"
-git config --global alias.l "log --decorate --pretty='format:%C(yellow black dim)%h%Creset%C(auto)% d%Creset %C(green black ul)%cN, %ar:%Creset %s' --graph --all -1000"
+git config --global alias.l "log --decorate --pretty='format:%C(yellow black dim)%h%Creset%C(auto)% d%Creset %C(green black ul)%aN, %ar:%Creset %s' --graph --all -1000"
 git config --global alias.t-rm "branch -d timotej"
 git config --global alias.t-go "checkout -b timotej"
 git config --global alias.wb "rev-parse --abbrev-ref HEAD"
